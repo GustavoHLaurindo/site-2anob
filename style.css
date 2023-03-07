@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #6800d0c8,#780be5);
+}
+header div.links a{
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+ 
+}
+div.links{
+    display: flex;
+    gap: 30px;
+}
+section#sobre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 120px 80px;
+    justify-content: space-around;
+    background-image: url("imagens/imagem-sobre2.png");
+    background-size: cover;
+    background-position: center right;
+}
+div.texto-sobre{
+    max-width: 550px;
+    
+    background-color: rgb(255 255 255 / 37%);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    border:2px solid white;
+}
+div.texto-sobre h1{
+    font-size: 2.3em;
+    margin-bottom: 10px;
+}
+div.texto-sobre p{
+    line-height: 26px;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+img#livro{
+    max-width: 450px;
+    
+}
+section#estudantes-container{
+    padding: 50px 20px;
+    background-color: #6800d0c8;
+    position: relative;
+    z-index: 400;
+    
+}
+section#estudantes-container div.circle{
+    background-color: rgb(201, 4, 201);
+    width: 100%;
+    height: 100%;
+    clip-path: circle(20.0% at 100% 0);
+    top: 0;
+    left: 0;
+    box-shadow: 2px 2px 2px 2px purple;
+    z-index: -1;
+    position: absolute;
+}
+section#estudantes-container div.esquerda-baixo{
+    clip-path: circle(20.0% at 0 100% );
+    z-index: -1;
+}
+section#estudantes-container h1#quem-sao{
+    text-align: center;
+    color: white;
+    font-size: 2.3em;
+    padding-bottom: 50px;
+    
+}
+
+#estudantes-grid{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+   
+}
+.box{
+    background-color: rgba(240, 248, 255, 0.292);
+    backdrop-filter: blur(5px);
+    border: 3px solid white;
+    padding: 15px;
+    display: flex;
+    border-radius: 10px;
+
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.box h1.nome{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-weight: 300;
+}
+.box img.image-face{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+}
+div.redes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.redes a i#facebook{
+    color: #ffffff;
+}
+.redes a i#instagram{
+   background: -webkit-linear-gradient(90deg,#feda75, #fa7e1e,#d62976,#962fbf,#4f5bd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.redes a i.icone{
+    font-size: 30px;
+    color: white;
+    
+}
+
+footer{
+    background-image: linear-gradient(to right, #962fbf,#4f5bd5);
+    border-top: 3px solid rgba(255, 255, 255, 0.644);
+    padding: 10px;
+    z-index: 4000;
+}
+footer .criador{
+    color: white;
+    text-align: center;
+    font-size:1.4em;
+}
+footer .criador span{
+    text-decoration: underline;
+    text-decoration-color: #fa7e1e;
+}
